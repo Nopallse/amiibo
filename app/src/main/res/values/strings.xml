@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">MovieCatalog</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+
+    <string name="home_title">Browse All Amiibos</string>
+    <string name="error_image_desc">Error image</string>
+    <string name="amiibo_info">Amiibo Information</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_map">Maps</string>
+    <string name="menu_favorite">Favorite</string>
+
+    <string name="title_activity_detail_home">DetailHomeActivity</string>
+    <string name="no_data">Empty data</string>
+    <string name="something_wrong">Oops.. something went wrong</string>
+    <string name="title_maps">Maps</string>
+
+    <string name="image_description">Amiibo image</string>
+    <string name="character_label">Character:</string>
+    <string name="series_label">Series:</string>
+    <string name="game_label">Game:</string>
+    <string name="type_label">Type:</string>
+    <string name="release_dates">Release Dates</string>
+    <string name="id_label">ID:</string>
+    <string name="no_release_info">No release information available</string>
+    <string name="text_subtitle">Amiibo Details</string>
+    <string name="amiibo_detail_template">Series: %1$s\nCharacter: %2$s\nGame: %3$s\nType: %4$s\n\nRelease Dates:\n%5$s</string>
+
+
+</resources>
