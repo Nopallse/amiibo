@@ -41,7 +41,7 @@ dependencies {
     implementation(project(":core"))
     implementation(project(":app"))
     testImplementation ("junit:junit:4.13.2")
-
+    androidTestImplementation(libs.androidx.junit)
 
 
 }

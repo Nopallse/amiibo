@@ -68,10 +68,11 @@ dependencies {
 
     api(libs.koin.android)
 
-    testImplementation ("junit:junit:4.13.2")
-    androidTestImplementation ("androidx.test.ext:junit:1.1.5")
-    androidTestImplementation ("androidx.test.espresso:espresso-core:3.5.1")
+    testImplementation(libs.junit)
+    androidTestImplementation(libs.androidx.junit)
+    androidTestImplementation(libs.androidx.espresso.core)
 
-    testImplementation ("org.mockito:mockito-core:4.4.0")
-    testImplementation ("org.mockito:mockito-inline:4.4.0")
+    testImplementation (libs.mockito.core)
+    testImplementation (libs.mockito.inline)
+    testImplementation (libs.junit)
 }
