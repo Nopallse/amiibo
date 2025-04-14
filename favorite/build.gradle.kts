@@ -11,6 +11,7 @@ android {
     defaultConfig {
         minSdk = 24
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+
     }
 
     buildTypes {
@@ -42,6 +43,7 @@ dependencies {
     implementation(project(":app"))
     testImplementation ("junit:junit:4.13.2")
     androidTestImplementation(libs.androidx.junit)
-
+    androidTestImplementation (libs.androidx.runner)
+    androidTestImplementation (libs.androidx.espresso.core)
 
 }
