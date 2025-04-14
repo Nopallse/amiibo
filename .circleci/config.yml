@@ -25,13 +25,12 @@ jobs:
           name: Download Dependencies
           command: ./gradlew dependencies
 
-      - android/run-tests:
-          test-command: ./gradlew lint testDebug --continue
+      - run:
+          name: Run Lint & Unit Test
+          command: ./gradlew lint testDebug --continue
 
       - android/start-emulator-and-run-tests:
-          test-command: |
-            adb wait-for-device
-            ./gradlew connectedDebugAndroidTest
+          test-command: ./gradlew connectedDebugAndroidTest
           system-image: system-images;android-25;google_apis;x86
 
       - run:
@@ -41,6 +40,9 @@ jobs:
       - store_artifacts:
           path: app/build/outputs/apk/release/app-release.apk
 
+      - store_test_results:
+          path: app/build/test-results
+
       - save_cache:
           paths:
             - ~/.gradle/caches
@@ -48,6 +50,6 @@ jobs:
           key: gradle-cache-{{ checksum "build.gradle" }}
 
 workflows:
-  sample:
+  build:
     jobs:
       - build-and-test
