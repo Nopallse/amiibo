@@ -28,7 +28,7 @@ android {
             )
         }
         debug {
-            isMinifyEnabled = true
+            isMinifyEnabled = false
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
@@ -61,6 +61,7 @@ dependencies {
     implementation(libs.androidx.constraintlayout)
 
     debugImplementation ("com.squareup.leakcanary:leakcanary-android:2.10")
+    androidTestImplementation ("org.jetbrains.kotlin:kotlin-stdlib:2.0.21")
 
 
     testImplementation(libs.junit)
