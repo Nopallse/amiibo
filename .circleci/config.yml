@@ -14,7 +14,7 @@ jobs:
 
       - restore_cache:
           keys:
-            - gradle-cache-{{ checksum "build.gradle" }}
+            - gradle-cache-{{ checksum "settings.gradle.kts" }}
             - gradle-cache-
 
       - run:
@@ -47,7 +47,7 @@ jobs:
           paths:
             - ~/.gradle/caches
             - ~/.gradle/wrapper
-          key: gradle-cache-{{ checksum "build.gradle" }}
+          key: gradle-cache-{{ checksum "settings.gradle.kts" }}
 
 workflows:
   build:
