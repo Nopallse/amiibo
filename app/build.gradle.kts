@@ -61,7 +61,7 @@ dependencies {
     implementation(libs.androidx.constraintlayout)
 
     debugImplementation ("com.squareup.leakcanary:leakcanary-android:2.10")
-    androidTestImplementation ("org.jetbrains.kotlin:kotlin-stdlib:2.0.21")
+    androidTestImplementation ("org.jetbrains.kotlin:kotlin-stdlib:1.8.20")
 
 
     testImplementation(libs.junit)
