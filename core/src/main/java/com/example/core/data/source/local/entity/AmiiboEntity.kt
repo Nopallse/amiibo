@@ -8,7 +8,6 @@ import androidx.room.PrimaryKey
 @Entity(tableName = "amiibo")
 data class AmiiboEntity(
     @PrimaryKey
-    @NonNull
     @ColumnInfo(name = "id")
     val id: String, // combination of head+tail as unique identifier
 

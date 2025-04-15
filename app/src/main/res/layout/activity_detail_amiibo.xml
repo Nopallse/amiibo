@@ -121,12 +121,12 @@
                         android:id="@+id/tv_info_title"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:drawableStart="@drawable/ic_info"
                         android:drawablePadding="8dp"
                         android:text="@string/amiibo_info"
                         android:textColor="@color/colorPrimaryDark"
                         android:textSize="18sp"
                         android:textStyle="bold"
+                        app:drawableStartCompat="@drawable/ic_info"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
 
@@ -250,12 +250,12 @@
                         android:id="@+id/tv_release_title"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:drawableStart="@drawable/ic_calendar"
                         android:drawablePadding="8dp"
                         android:text="@string/release_dates"
                         android:textColor="@color/colorPrimaryDark"
                         android:textSize="18sp"
                         android:textStyle="bold"
+                        app:drawableStartCompat="@drawable/ic_calendar"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
 

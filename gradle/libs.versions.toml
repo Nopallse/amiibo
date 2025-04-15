@@ -21,6 +21,8 @@ activity = "1.10.1"
 mockitoCore = "4.4.0"
 mockitoInline = "4.4.0"
 runner = "1.6.2"
+androidDatabaseSqlcipher = "4.5.4"
+sqliteKtx = "2.4.0"
 
 [libraries]
 androidx-core-ktx = { module = "androidx.core:core-ktx", version.ref = "coreKtx" }
@@ -48,6 +50,8 @@ androidx-activity = { group = "androidx.activity", name = "activity", version.re
 mockito-inline = { module = "org.mockito:mockito-inline", version.ref = "mockitoInline" }
 mockito-core = { module = "org.mockito:mockito-core", version.ref = "mockitoCore" }
 kotlin-test-junit = { module = "org.jetbrains.kotlin:kotlin-test-junit" }
+android-database-sqlcipher = { module = "net.zetetic:android-database-sqlcipher", version.ref = "androidDatabaseSqlcipher" }
+androidx-sqlite-ktx = { module = "androidx.sqlite:sqlite-ktx", version.ref = "sqliteKtx" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

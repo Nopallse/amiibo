@@ -12,6 +12,7 @@ import androidx.fragment.app.Fragment
 import com.example.moviecatalog.databinding.ActivityMainBinding
 import com.example.moviecatalog.home.HomeFragment
 import com.google.android.material.navigation.NavigationView
+import androidx.core.net.toUri
 
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
@@ -54,7 +55,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 fragment = HomeFragment()
             }
             R.id.nav_favorite -> {
-                val uri = Uri.parse("amiibo://favorite")
+                val uri = "amiibo://favorite".toUri()
                 startActivity(Intent(Intent.ACTION_VIEW, uri))
             }
         }

@@ -1,7 +1,5 @@
 <resources>
     <string name="app_name">favorite</string>
     <string name="favorite_amiibo">Favorite Amiibos</string>
-    <string name="no_favorites">You haven\'t added any favorites yet</string>
-    <string name="no_favorites_desc">No favorites image</string>
     <string name="title_favorite">Favorite</string>
 </resources>

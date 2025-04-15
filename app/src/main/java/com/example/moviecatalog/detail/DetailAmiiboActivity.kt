@@ -1,5 +1,6 @@
 package com.example.moviecatalog.detail
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -32,6 +33,7 @@ class DetailAmiiboActivity : AppCompatActivity() {
         showDetailAmiibo(detailAmiibo)
     }
 
+    @SuppressLint("SetTextI18n")
     private fun showDetailAmiibo(detailAmiibo: Amiibo?) {
         detailAmiibo?.let {
             // Set toolbar title in collapsing toolbar
