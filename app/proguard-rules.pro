@@ -22,5 +22,5 @@
 -keep class com.example.core.di.** { *; }
 -keep class com.example.moviecatalog.di.** { *; }
 
-# Keep adapter dan UI penting
+# Keep adapter dan UI pentings
 -keep class com.example.core.ui.** { *; }
